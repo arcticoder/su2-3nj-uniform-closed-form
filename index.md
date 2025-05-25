@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Universal Closed-Form Hypergeometric Representation of SU(2) 3nj Symbols
+permalink: /landing/
 ---
 
 # Universal Closed-Form Hypergeometric Representation of SU(2) 3nj Symbols
