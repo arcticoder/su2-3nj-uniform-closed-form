@@ -6,11 +6,15 @@ import pandas as pd
 import os
 import sys
 
+# Determine script location and project root
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(script_dir, '..'))
+
 # Add project root to path to ensure consistent imports when run from different locations
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, project_root)
 
 # Create data directory if it doesn't exist
-data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
+data_dir = os.path.join(project_root, 'data')
 os.makedirs(data_dir, exist_ok=True)
 
 # Define symbolic variables
