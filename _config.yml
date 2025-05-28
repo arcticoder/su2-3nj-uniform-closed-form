@@ -9,6 +9,10 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
+# Plugins
+plugins:
+  - jekyll-sitemap
+
 # Exclude from processing
 exclude:
   - .sass-cache/
