@@ -114,23 +114,11 @@ The universal representation unifies all 3nj symbols through:
 - **Mathematical Physics**: Special function theory and applications
 - **Numerical Libraries**: High-performance recoupling coefficient computation
 
-## 📄 Citation
+## License
 
-```bibtex
-@article{su2_3nj_uniform_closed_form,
-  title={Universal Closed-Form Hypergeometric Representation of SU(2) 3nj Symbols},
-  author={Arctic Coder},
-  journal={GitHub Repository},
-  year={2025},
-  url={https://github.com/arcticoder/su2-3nj-uniform-closed-form}
-}
-```
+This project is licensed under The Unlicense - see the [LICENSE](LICENSE) file for details.
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
