@@ -5,7 +5,7 @@
 
 \title{Uniform Closed-Form Representation of SU(2) 12j Symbols}
 \author{Arcticoder}
-\date{May 25, 2025}
+\date{July 25, 2025}
 
 \begin{document}
 \maketitle
@@ -77,6 +77,23 @@ The prefactor \(\Delta\) is
   \item Expand each \(E_k^r\) into monomials in \(x_i^{2}\) and collect exponents \(\{2j_{12},2j_{23},2j_{34},2j_{45}\}\).
   \item The combinatorial sums collapse to a single free index \(m\), yielding the \({}_5F_4\) series above.
 \end{enumerate}
+
+\section*{Verification and Validation}
+
+To confirm our closed‐form hypergeometric expressions, we perform two checks:
+
+\paragraph{Numeric consistency with Racah sums.}
+We compare the output of our `closed_form_3nj` function against the trusted
+`generate_3nj` (SymPy’s built‐in Racah sum) for representative spin tuples
+\((1,1,1,1,1,1)\), \((2,2,2,2,2,2)\), and \((1,2,3,4,5,6)\).
+This is automated by `scripts/validate_closed_form.py`, and confirms exact agreement to machine precision.
+
+\paragraph{Regression against reference data.}
+A regression test reads precomputed, vetted values from
+`tests/reference_3nj_closed_form.json` and exercises
+`closed_form_3nj` over the same tuples.  Results are written to
+`data/reference_closed_form_results.csv` by
+`scripts/test_reference_closed_form.py`, with all entries matching (`match = True`).
 
 \section*{Conclusion}
 
