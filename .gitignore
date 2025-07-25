@@ -27,3 +27,5 @@ Thumbs.db
 .github/instructions/copilot-instructions.md
 
 .github/
+
+**/*.pyc
