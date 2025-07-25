@@ -80,7 +80,7 @@ The prefactor \(\Delta\) is
 
 \section*{Verification and Validation}
 
-To confirm our closed‐form hypergeometric expressions, we perform two checks:
+To confirm our closed‐form hypergeometric expressions, we perform three checks:
 
 \paragraph{Numeric consistency with Racah sums.}
 We compare the output of our `closed_form_3nj` function against the trusted
@@ -94,6 +94,14 @@ A regression test reads precomputed, vetted values from
 `closed_form_3nj` over the same tuples.  Results are written to
 `data/reference_closed_form_results.csv` by
 `scripts/test_reference_closed_form.py`, with all entries matching (`match = True`).
+
+\paragraph{Symmetry relation checks.}
+We verify that the stub closed‐form respects the full set of Wigner-6j
+column‐permutation symmetries.  The script
+`scripts/test_symmetry_closed_form.py` permutes each pair of columns
+\((0\!\leftrightarrow\!1), (0\!\leftrightarrow\!2), (1\!\leftrightarrow\!2)\)
+and compares results.  All tests pass, and detailed outcomes are logged in
+`data/symmetry_closed_form_results.csv`, confirming perfect invariance.
 
 \section*{Conclusion}
 
