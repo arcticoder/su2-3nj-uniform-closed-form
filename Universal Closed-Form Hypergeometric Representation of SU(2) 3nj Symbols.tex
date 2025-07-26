@@ -110,6 +110,14 @@ The script `scripts/test_domain_validation.py` runs these cases and writes
 results to `data/domain_validation_results.csv`, with all cases marked `True`,
 confirming correct domain handling.
 
+\paragraph{Performance benchmark vs generating functional.}
+We compare execution time of our hypergeometric closed-form against the
+master generating-functional implementation for a representative spin tuple
+\((10,10,10,10,10,10)\).  The script
+`scripts/test_performance_benchmark.py` measures and writes timings to
+`data/performance_benchmark_results.csv`, and asserts that the closed-form
+variant is faster, confirming improved performance.
+
 \section*{Conclusion}
 
 This derivation shows that the 12j symbol emerges from a \emph{single} \({}_5F_4\)-type hypergeometric series with no nested finite sums left. The same logic extends to all higher SU(2) 3nj symbols.
