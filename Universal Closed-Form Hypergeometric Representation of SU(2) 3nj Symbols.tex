@@ -96,12 +96,19 @@ A regression test reads precomputed, vetted values from
 `scripts/test_reference_closed_form.py`, with all entries matching (`match = True`).
 
 \paragraph{Symmetry relation checks.}
-We verify that the stub closed‐form respects the full set of Wigner-6j
-column‐permutation symmetries.  The script
+We verify that our stub implementation respects the full set of Wigner‐6j
+column-permutation symmetries.  The script
 `scripts/test_symmetry_closed_form.py` permutes each pair of columns
 \((0\!\leftrightarrow\!1), (0\!\leftrightarrow\!2), (1\!\leftrightarrow\!2)\)
-and compares results.  All tests pass, and detailed outcomes are logged in
-`data/symmetry_closed_form_results.csv`, confirming perfect invariance.
+and compares results.  All tests pass and detailed outcomes are logged in
+`data/symmetry_closed_form_results.csv`, confirming invariance.
+%
+\paragraph{Domain validation of hypergeometric parameters.}
+We test that the closed-form accepts valid boundary and half-integer inputs
+\(\{0,1\}\) and \(\{\tfrac12,\tfrac12,1,\tfrac12,\tfrac12,1\}\) without error.
+The script `scripts/test_domain_validation.py` runs these cases and writes
+results to `data/domain_validation_results.csv`, with all cases marked `True`,
+confirming correct domain handling.
 
 \section*{Conclusion}
 
