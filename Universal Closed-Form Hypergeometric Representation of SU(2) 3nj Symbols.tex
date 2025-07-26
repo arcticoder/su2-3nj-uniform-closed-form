@@ -118,6 +118,14 @@ master generating-functional implementation for a representative spin tuple
 `data/performance_benchmark_results.csv`, and asserts that the closed-form
 variant is faster, confirming improved performance.
 
+\paragraph{Recursion relation cross-check for closed form.}
+We verify that the closed-form implementation matches the recursion-based
+calculation.  The script
+`scripts/test_recursion_cross_check.py` invokes `closed_form_3nj` and
+`recursion_3nj` on spin tuple \((1,2,3,4,5,6)\), simplifies the difference
+via SymPy, and writes results to
+`data/recursion_cross_check_results.csv`, confirming exact agreement.
+
 \section*{Conclusion}
 
 This derivation shows that the 12j symbol emerges from a \emph{single} \({}_5F_4\)-type hypergeometric series with no nested finite sums left. The same logic extends to all higher SU(2) 3nj symbols.

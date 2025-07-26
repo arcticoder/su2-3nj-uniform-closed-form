@@ -35,6 +35,7 @@
       "**/.git": true,
       "**/__pycache__": true,
       "**/.venv": true
-    }
+    },
+    "powershell.cwd": "su2-3nj-uniform-closed-form"
   }
 }
