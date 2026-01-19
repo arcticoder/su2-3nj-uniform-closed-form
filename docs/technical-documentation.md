@@ -139,7 +139,7 @@ verify_additional_9j_numeric.py: Extended numerical testing
 
 ### Primary Documentation
 - **README.md**: Overview and quick start guide
-- **GitHub Pages**: [Interactive mathematical presentation](https://arcticoder.github.io/su2-3nj-uniform-closed-form/)
+- **GitHub Pages**: [Interactive mathematical presentation](https://dawsoninstitute.github.io/su2-3nj-uniform-closed-form/)
 - **PDF Paper**: Complete mathematical exposition
 - **LaTeX Source**: Publication-ready derivations
 

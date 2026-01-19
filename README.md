@@ -1,6 +1,6 @@
 # Universal Closed-Form Hypergeometric Representation of SU(2) 3nj Symbols
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://arcticoder.github.io/su2-3nj-uniform-closed-form/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://dawsoninstitute.github.io/su2-3nj-uniform-closed-form/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
 
@@ -25,7 +25,7 @@ The project proposes a closed-form hypergeometric representation that aims to co
 
 ## 🌐 Online Documentation
 
-**📚 Read the paper online**: https://arcticoder.github.io/su2-3nj-uniform-closed-form/
+**📚 Read the paper online**: https://dawsoninstitute.github.io/su2-3nj-uniform-closed-form/
 
 The website features interactive exposition, downloadable PDF, example code, and links to related work in the SU(2) 3nj series.
 
